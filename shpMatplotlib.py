@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.path as mpath
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
+#在matplotlib上读取shp文件绘制地图 
 # Extract first layer of features from shapefile using OGR
 ds = ogr.Open(u'h:/test/Lambert/线状省界.shp')
 nlay = ds.GetLayerCount()
