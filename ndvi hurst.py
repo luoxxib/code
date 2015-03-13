@@ -3,6 +3,8 @@ from numpy import *
 from numpy.linalg import lstsq
 import arcpy
 
+#计算栅格ndvi的hurst指数
+
 seterr(divide='ignore', invalid='ignore')
 
 arcpy.env.workspace = r"H:\RS\年均NDVI"
