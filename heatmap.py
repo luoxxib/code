@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from matplotlib import rcParams
 from matplotlib.font_manager import FontProperties
 
+#热力图制作
+
 font = FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=18) 
 rcParams["savefig.dpi"] = 600
 
