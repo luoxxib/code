@@ -6,7 +6,7 @@ import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 #在matplotlib上读取shp文件绘制地图 
 # Extract first layer of features from shapefile using OGR
-ds = ogr.Open(u'h:/test/Lambert/线状省界.shp')
+ds = ogr.Open(u'h:/test/Lambert/中国地州界.shp')
 nlay = ds.GetLayerCount()
 lyr = ds.GetLayer(0)
 # Get extent and calculate buffer size
@@ -18,6 +18,9 @@ fig = plt.figure()
 ax = fig.add_subplot(111)
 ax.set_xlim(ext[0] - xoff, ext[1] + xoff)
 ax.set_ylim(ext[2] - yoff, ext[3] + yoff)
+ax.set_xticks([]) #取消横坐标标注
+ax.set_yticks([])
+
 paths = []
 lyr.ResetReading()
 # Read all features in layer and store as paths
