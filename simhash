@@ -10,6 +10,12 @@ class simhash:
     #toString函数   
     def __str__(self):
         return str(self.hash)
+        
+    def __long__(self):
+        return long(self.hash)
+ 
+    def __float__(self):
+        return float(self.hash)     
    
     #生成simhash值   
     def simhash(self, tokens):
